@@ -33,3 +33,6 @@ The logs you shared show InfinityFree returns an HTML page containing `/aes.js` 
 
 ## Security
 Your previous ZIP included credentials. Rotate the Discord client secret, database password, and API key, then update the Render environment variables and website config. Do not commit secrets to GitHub.
+
+## November 14 startup fix
+Fixed a broken HTTPS regex that incorrectly rejected valid `https://` URLs. The bot now validates `PUBLIC_BASE_URL` and `DISCORD_REDIRECT_URI` using the built-in URL parser.
