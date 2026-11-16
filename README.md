@@ -1,16 +1,5 @@
 # Dibiaa Hub Discord Ticket Bot — patched build
 
-## Update 16 Nov 2026
-- Fixed: the bot exited on start because the HTTPS check required `https:///`.
-- New: Close / Close With Reason, star-rating DM (panel "Enable user feedback"), working auto close.
-- New: transcripts keep embeds, buttons and mention names.
-- New endpoints: `GET /health`, `GET /guilds/:id/roles`, `GET /guilds/:id/members?role_id=`,
-  `POST /tickets/:channelId/archive`, `GET /ratings/pending`.
-- If the website is unreachable when a ticket is closed, the channel is locked and renamed `closed-…`
-  instead of failing; the website's "Sync from Discord" imports it and then removes the channel.
-- Enable **Server Members Intent** in the Discord Developer Portal (Bot tab) for team member lists.
-- Also required: `PUBLIC_BASE_URL` (for example `https://dibiaa.onrender.com`).
-
 ## Fixes in this build
 - Panel publish no longer reports a false failure just because Render cannot call the InfinityFree API.
 - Panel questions are cached in the bot when the website publishes the panel.
