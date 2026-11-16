@@ -15,7 +15,8 @@ Required:
 - `WEBSITE_API_URL` (for example `https://dibiaa.free.nf/api/bot.php`)
 - `DISCORD_CLIENT_ID`
 - `DISCORD_CLIENT_SECRET`
-- `DISCORD_REDIRECT_URI` = `https://dibiaa.free.nf/discord-callback.php`
+- `DISCORD_REDIRECT_URI` = `https://dibiaa.free.nf/discord-callback.php` (must exactly match the Discord Developer Portal OAuth redirect URI)
+- `PUBLIC_BASE_URL` = the public HTTPS URL of this Render web service (for example, `https://dibiaa-bot.onrender.com`)
 
 Optional:
 - `TICKET_CATEGORY_ID` = Discord category ID where new ticket channels should be created

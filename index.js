@@ -50,7 +50,7 @@ if (missingEnvironment.length) {
   console.error('Missing required environment variables: ' + missingEnvironment.join(', '));
   process.exit(1);
 }
-if (!/^https:\/\/\//i.test(publicBaseUrl) || !/^https:\/\/\//i.test(discordRedirectUri)) {
+if (!/^https:\/\//i.test(publicBaseUrl) || !/^https:\/\//i.test(discordRedirectUri)) {
   console.error('PUBLIC_BASE_URL and DISCORD_REDIRECT_URI must use HTTPS.');
   process.exit(1);
 }
