@@ -1,0 +1,18 @@
+{
+  "name": "dibiaa-hub-discord-bot",
+  "version": "2.1.0",
+  "description": "Dibiaa Hub Discord ticket panel and dashboard API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
